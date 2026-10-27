@@ -56,16 +56,7 @@ Scripts run in order; each reads only prior outputs and `config.yml`.
 | `18_manuscript_generation.R` | build manuscript `.md`/`.docx`/`.pdf` | `manuscript/` |
 | `19_final_audit.R` | cross-check every manuscript number/fig/table/ref | `audit/final_audit_summary.md`, `claim_evidence_matrix.tsv` |
 
-## Reproducibility and audit
 
-- All thresholds are centralised in `config.yml` (seeds, FDR, soft power,
-  permutation/bootstrap counts).
-- `results/audit/sessionInfo.txt` records the R session; `package_versions.tsv`
-  records package versions.
-- `results/audit/final_audit_summary.md` confirms **108/108 manuscript number
-  checks passed**, 13/13 figures present, 21/21 tables present, and 13/13
-  references PMID-verified and cited.
-- Reference PMIDs were verified against NCBI PubMed (no fabricated references).
 
 ## Requirements
 
